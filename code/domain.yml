@@ -1,0 +1,77 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- corona_intro
+- corona_spread
+- corona_food_spread
+- warm_weather
+- high_risk
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_corona_intro:
+  - text: Coronaviruses are a group of related viruses that cause diseases in mammals
+      and birds. In humans, coronaviruses cause respiratory tract infections that
+      can be mild, such as some cases of the common cold (among other possible causes,
+      predominantly rhinoviruses), and others that can be lethal, such as SARS, MERS,
+      and COVID-19
+  utter_corona_spread:
+  - text: "This virus was first detected in Wuhan City, Hubei Province, China. The\
+      \ first infections were linked to a live animal market, but the virus is now\
+      \ spreading from person-to-person. It’s important to note that person-to-person\
+      \ spread can happen on a continuum. Some viruses are highly contagious (like\
+      \ measles), while other viruses are less so. The virus that causes COVID-19\
+      \ is spreading from person-to-person. Someone who is actively sick with COVID-19\
+      \ can spread the illness to others. That is why we recommend that these patients\
+      \ be isolated either in the hospital or at home (depending on how sick they\
+      \ are) until they are better and no longer pose a risk of infecting others.\n\
+      How long someone is actively sick can vary so the decision on when to release\
+      \ someone from isolation is made on a case-by-case basis in consultation with\
+      \ doctors, infection prevention and control experts, and public health officials\
+      \ and involves considering specifics of each situation including disease severity,\
+      \ illness signs and symptoms, and results of laboratory testing for that patient.\n\
+      The virus that causes COVID-19 seems to be spreading easily and sustainably\
+      \ in the community (“community spread”) in some affected geographic areas. Community\
+      \ spread means people have been infected with the virus in an area, including\
+      \ some who are not sure how or where they became infected."
+  utter_corona_food_spread:
+  - text: Coronaviruses are generally thought to be spread from person-to-person through
+      respiratory droplets. Currently there is no evidence to support transmission
+      of COVID-19 associated with food. Before preparing or eating food it is important
+      to always wash your hands with soap and water for 20 seconds for general food
+      safety. Throughout the day wash your hands after blowing your nose, coughing
+      or sneezing, or going to the bathroom.
+  utter_warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of
+      COVID-19. Some other viruses, like the common cold and flu, spread more during
+      cold weather months but that does not mean it is impossible to become sick with
+      these viruses during other months.  At this time, it is not known whether the
+      spread of COVID-19 will decrease when weather becomes warmer.  There is much
+      more to learn about the transmissibility, severity, and other features associated
+      with COVID-19 and investigations are ongoing.
+  utter_high_risk:
+  - text: Older adults and people of any age who have serious underlying medical conditions
+      may be at higher risk for more serious complications from COVID-19. These people
+      who may be at higher risk of getting very sick from this illness, includes;
+      Older adults, People who have serious underlying medical conditions like...
+      Heart disease, Diabetes, Lung disease,
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_goodbye
+- utter_iamabot
+- utter_corona_intro
+- utter_corona_spread
+- utter_corona_food_spread
+- utter_warm_weather
+- utter_high_risk
